@@ -29,7 +29,7 @@ function LandingPage({ onYesClick }) {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-pink-200 via-purple-200 to-pink-300 relative overflow-hidden">
+    <div className="min-h-screen bg-linear-to-br from-pink-200 via-purple-200 to-pink-300 relative overflow-hidden">
 
       {/* Floating Hearts */}
       {[...Array(20)].map((_, i) => (
@@ -61,7 +61,7 @@ function LandingPage({ onYesClick }) {
         <div className="absolute top-[22%] sm:top-[12%] left-[4%] sm:left-[6%]
           w-36 sm:w-56 md:w-72
           h-48 sm:h-72 md:h-80
-          rotate-[-6deg] sm:rotate-[-12deg]
+          -rotate-6 sm:-rotate-12
           rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
           <img src={img1} className="w-full h-full object-cover" />
         </div>
@@ -77,7 +77,7 @@ function LandingPage({ onYesClick }) {
         <div className="absolute top-[24%] sm:top-[14%] right-[4%] sm:right-[8%]
           w-36 sm:w-56 md:w-72
           h-48 sm:h-72 md:h-84
-          -rotate-[6deg] sm:-rotate-[-10deg]
+          -rotate-6 sm:-rotate-[-10deg]
           rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
           <img src={img3} className="w-full h-full object-cover" />
         </div>
@@ -85,7 +85,7 @@ function LandingPage({ onYesClick }) {
         <div className="absolute bottom-[10%] sm:bottom-[8%] right-[2%] sm:right-[4%]
           w-40 sm:w-64 md:w-80
           h-56 sm:h-80 md:h-96
-          -rotate-[4deg] sm:-rotate-[6deg]
+          -rotate-[4deg] sm:-rotate-6
           rounded-2xl overflow-hidden shadow-2xl border-4 border-white">
           <img src={img4} className="w-full h-full object-cover" />
         </div>
