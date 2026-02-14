@@ -3,9 +3,11 @@ import { useRef, useState } from "react";
 
 import rose from "../assets/rose.jpg";
 
+import song from "../assets/song.mp3"
+
 function NotePage({ onBack }) {
   const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(true);
+  const [isPlaying, setIsPlaying] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
 
   const toggleMusic = () => {
@@ -106,7 +108,7 @@ function NotePage({ onBack }) {
         </button>
 
         <audio ref={audioRef} loop>
-          <source src="/music.mp3" type="audio/mpeg" />
+          <source src={song} type="audio/mpeg" />
         </audio>
       </div>
 
